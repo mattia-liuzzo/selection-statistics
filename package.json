@@ -1,0 +1,72 @@
+{
+  "name": "selection-statistics",
+  "displayName": "Selection Statistics",
+  "description": "Selection statistics for numbers: sum, average, median, min, max and copy to clipboard",
+  "version": "1.0.0",
+  "publisher": "mliuzzo",
+
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mliuzzo/selection-statistics"
+  },
+
+  "categories": [
+    "Other"
+  ],
+
+  "keywords": [
+    "sum",
+    "calculator",
+    "statistics",
+    "selection",
+    "average",
+    "median"
+  ],
+
+  "activationEvents": [
+    "*"
+  ],
+
+  "main": "./extension.js",
+
+  
+  "contributes": {
+    "configuration": {
+      "title": "Selection Statistics",
+      "properties": {
+        "selectionStatistics.decimals": {
+          "type": "number",
+          "default": 2
+        },
+        "selectionStatistics.locale": {
+          "type": "string",
+          "default": "en-US"
+        },
+        "selectionStatistics.copyFormat": {
+          "type": "string",
+          "enum": [
+            "text",
+            "csv",
+            "json"
+          ],
+          "default": "text"
+        }
+      }
+    },    
+    "commands": [
+      {
+        "command": "selectionStatistics.copyResult",
+        "title": "Selection Statistics: Copy Result"
+      }
+    ]
+  },
+  "icon": "icon.png",
+
+  "devDependencies": {
+    "@types/node": "^22.0.0"
+  }
+}
