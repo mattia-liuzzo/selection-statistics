@@ -4,6 +4,7 @@
   "description": "Selection statistics for numbers: sum, average, median, min, max and copy to clipboard",
   "version": "1.0.0",
   "publisher": "mliuzzo",
+  "license": "MIT",
 
   "engines": {
     "vscode": "^1.90.0"
