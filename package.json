@@ -2,7 +2,7 @@
   "name": "selection-statistics",
   "displayName": "Selection Statistics",
   "description": "Selection statistics for numbers: sum, average, median, min, max and copy to clipboard",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "publisher": "mliuzzo",
   "license": "MIT",
 
